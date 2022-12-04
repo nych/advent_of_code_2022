@@ -8,6 +8,7 @@ import (
 	"os"
 
 	day1 "github.com/nych/advent_of_code_2022/internal/day_1"
+	day2 "github.com/nych/advent_of_code_2022/internal/day_2"
 )
 
 var (
@@ -38,6 +39,9 @@ func main() {
 	case 1:
 		solvePartOne = day1.SolvePartOne
 		solvePartTwo = day1.SolvePartTwo
+	case 2:
+		solvePartOne = day2.SolvePartOne
+		solvePartTwo = day2.SolvePartTwo
 	default:
 		panic(fmt.Errorf("solver for day %v not yet implemented", day))
 	}
